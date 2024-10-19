@@ -9,9 +9,9 @@ from google.generativeai.types import HarmCategory, HarmBlockThreshold
 load_dotenv()
 from functools import partial
 
-key  =  os.getenv("GOOGLE_API_KEY")
+#key  =  os.getenv("GOOGLE_API_KEY")
 
-genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
+key = AIzaSyDgCpeEeJAYISN1PCX374xas_uODAzbajY
 #  Setup chat model
 chat_model = ChatGoogleGenerativeAI(google_api_key=key, model="gemini-1.5-flash")
 safety_settings = {
